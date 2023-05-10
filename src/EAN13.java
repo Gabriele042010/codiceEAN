@@ -1,8 +1,17 @@
-public class EAN13 {
+/**
+ * @author Gabriele Di Santo
+ * @version 1.0
+ * @since 10/05/2023
+ */
+
+ public class EAN13 {
     
     private String codice;
 
-   
+   /**
+    * Funzione che inizializza il codice EAN13
+    * @param c valore del codice EAN13
+    */
     public void setCodice(String c){
         codice = c;
     }
@@ -11,7 +20,11 @@ public class EAN13 {
         return codice;
     }
 
-
+    /**
+     * Metodo per la verifica della correttezza del codice
+     * @return True se il codice è valido, False se il codice non è valido
+     * @throws NullPointerException se il codice è vuoto o nullo
+     */
     public boolean verificaCodice(){
 
         // Verifica se l'attributo codice è vuoto o nullo
